@@ -17,6 +17,8 @@ A lightweight RAG-powered web research assistant that:
 - DuckDuckGo search (`ddgs`)
 
 ## Project Structure
+
+```text
 rag-web-research-agent/
 │
 ├── app.py
@@ -30,7 +32,7 @@ rag-web-research-agent/
     ├── 01-home.jpg
     ├── 02-prompt.jpg
     ├── 03-answer.jpg
-    ├── 04-source-memory.jgg
-    ├── 05-source-memory-1.jpg
-    ├── 06-memory-only.jpg
-    └── 07-updated-example.jpg
+    ├── 04-source-memory.jpg
+    ├── 05-memory-only.jpg
+    └── 06-updated-example.jpg
+
