@@ -51,20 +51,22 @@ It’s designed as a **portfolio-grade demo** of agentic research workflows usin
 ```text
 rag-web-research-agent/
 │
-├── app.py
-├── rag_store.py
-├── web_search.py
+├── app.py # Streamlit UI + LLM orchestration
+├── rag_store.py # DuckDuckGo search tool wrapper
+├── web_search.py # Chroma vector store (RAG memory)
 ├── requirements.txt
 ├── .env.example
 ├── README.md
 ├── .gitignore
+├── LICENSE
 └── screenshots/
     ├── 01-home.jpg
     ├── 02-prompt.jpg
     ├── 03-answer.jpg
     ├── 04-source-memory.jpg
-    ├── 05-memory-only.jpg
-    └── 06-updated-example.jpg
+    ├── 05-source-memory-1.jpg
+    ├── 06-memory-only.jpg
+    └── 07-updated-example.jpg
 ```
 
 ---
@@ -84,6 +86,18 @@ Step-by-step flow:
 7. Answer is optionally stored back into Chroma as memory
 
 ---
+
+```mermaid
+flowchart TD
+    A[User Question] --> B[Streamlit UI]
+    B --> C[Retrieve Memory (Chroma)]
+    B --> D[Web Search (DuckDuckGo)]
+    C --> E[Prompt Builder]
+    D --> E[Prompt Builder]
+    E --> F[Ollama LLM]
+    F --> G[Answer + Citations]
+    G --> H[Save to Chroma Memory]
+```
 
 ## Setup (Windows + VS Code)
 
