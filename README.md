@@ -87,18 +87,6 @@ Step-by-step flow:
 
 ---
 
-```mermaid
-flowchart TD
-    A[User Question] --> B[Streamlit UI]
-    B --> C[Retrieve Memory (Chroma)]
-    B --> D[Web Search (DuckDuckGo)]
-    C --> E[Prompt Builder]
-    D --> E[Prompt Builder]
-    E --> F[Ollama LLM]
-    F --> G[Answer + Citations]
-    G --> H[Save to Chroma Memory]
-```
-
 ## Setup (Windows + VS Code)
 
 ### 1) Clone
