@@ -1,6 +1,6 @@
 # RAG Web Research Agent (LangChain + Chroma + Streamlit)
 
-A lightweight **RAG-powered web research assistant** that performs **real-time web search**, generates **clean summaries with inline citations**, and stores results into a **local vector database (Chroma)** for future retrieval (memory).
+A lightweight **RAG-powered web research assistant**  performs **real-time web search**, generates **clean summaries with inline citations**, and stores results into a **local vector database (Chroma)** for future retrieval (memory).
 
 It’s designed as a **portfolio-grade demo** of agentic research workflows using a **local LLM (Ollama)** — meaning **no paid API key is required**.
 
